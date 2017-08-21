@@ -12,7 +12,7 @@
     
     <title>
         
-            归档: 2017 | 
+            使用 Hexo 搭建博客并部署于 Github | 
         
         DengFz&#39;s Blog
     </title>
@@ -65,15 +65,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2017 | DengFz&#39;s Blog">
+    <meta property="og:title" content="使用 Hexo 搭建博客并部署于 Github | DengFz&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="">
     
 
     
+        <meta property="article:published_time" content="Mon Aug 21 2017 12:48:49 GMT+0800" />
+        <meta property="article:modified_time" content="Mon Aug 21 2017 14:54:50 GMT+0800" />
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档: 2017 | DengFz&#39;s Blog">
+    <meta name="twitter:title" content="使用 Hexo 搭建博客并部署于 Github | DengFz&#39;s Blog">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -81,13 +84,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/2017/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2017/08/21/hexo/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "DengFz&#39;s Blog",
+        "logo": "/img/favicon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "DengFz",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "headline": "使用 Hexo 搭建博客并部署于 Github",
+    "url": "http://yoursite.com/2017/08/21/hexo/index.html",
+    "datePublished": "Mon Aug 21 2017 12:48:49 GMT+0800",
+    "dateModified": "Mon Aug 21 2017 14:54:50 GMT+0800",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://yoursite.com"
+    }
+}
+</script>
 
 
     
@@ -275,96 +308,240 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#什么是博客？"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">什么是博客？</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#准备工具"><span class="post-toc-number">2.</span> <span class="post-toc-text">准备工具</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装-Hexo"><span class="post-toc-number">3.</span> <span class="post-toc-text">安装 Hexo</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Hexo-目录"><span class="post-toc-number">4.</span> <span class="post-toc-text">Hexo 目录</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#GitHub-部分"><span class="post-toc-number">5.</span> <span class="post-toc-text">GitHub 部分</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#回到-Hexo"><span class="post-toc-number">6.</span> <span class="post-toc-text">回到 Hexo</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#部署到-GitHub"><span class="post-toc-number">7.</span> <span class="post-toc-text">部署到 GitHub</span></a></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/08/21/hexo/">使用 Hexo 搭建博客并部署于 Github</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            前言我常年混迹与
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/08/21/hexo/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="DengFz's avatar">
-            </div>
-            <div>
-                <strong>DengFz</strong>
-                <span>8月 21, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                使用 Hexo 搭建博客并部署于 Github
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>DengFz</strong>
+        <span>8月 21, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=使用 Hexo 搭建博客并部署于 Github&url=http://yoursite.com/2017/08/21/hexo/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=使用 Hexo 搭建博客并部署于 Github&url=http://yoursite.com/2017/08/21/hexo/index.html&via=DengFz" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/08/21/hexo/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/08/21/hexo/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我常年混迹与<code>酷安</code>，在里面浏览了许多大牛的博客，里面精美的页面以及深奥的文章让我深深震撼，同时我也深谙网页的奇妙与美丽。于是兴趣被点燃，开始了自己的搭建博客之路。</p>
+<h3 id="什么是博客？"><a href="#什么是博客？" class="headerlink" title="什么是博客？"></a>什么是博客？</h3><p>博客，是 Blog 的音译，中文译名为“网络日志”。具体参见百度百科：<a href="https://baike.baidu.com/item/%E5%8D%9A%E5%AE%A2/124?fr=aladdin" target="_blank" rel="external">什么是博客？</a></p>
+<p>这里有些文章以供参考：<a href="https://zhuanlan.zhihu.com/p/19743861" target="_blank" rel="external">为什么你要写博客？</a> <a href="https://www.zhihu.com/question/20463581" target="_blank" rel="external">如何搭建独立博客？</a></p>
+<h1 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h1><ul>
+<li>Git</li>
+<li>Node.js</li>
+</ul>
+<ol>
+<li>进入<a href="https://git-scm.com/" target="_blank" rel="external">git</a>官网，下载对应系统版本的的git。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503303173847&amp;di=369cd967b5c8fd83559497b62dfd5527&amp;imgtype=jpg&amp;src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fd6ca7bcb0a46f21fc537d48afc246b600d33aeec.jpg" alt="1.1"><br>下载完成后直接点击 Next 进行安装。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503303268645&amp;di=d5ab77ac1b5e1c297f2ae55b51918957&amp;imgtype=jpg&amp;src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F77c6a7efce1b9d1639876fb8f9deb48f8d5464a3.jpg" alt="1.2"></li>
+<li>进入<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>官网。这里有两个版本供我们选择：<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503303596040&amp;di=30ee3cc679c833dc6f1200217a21f5b1&amp;imgtype=jpg&amp;src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F4afbfbedab64034f512335dfa5c379310b551d78.jpg" alt="1.3"><br>左边的版本可以理解为稳定版，推荐给大多数用户，右边的版本为开发板，具有最新的功能。我们建议下载左边的版本。<br>下载完成后，点击 Next 进行安装。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503303796361&amp;di=6bbe8ad68dfae5d887b126ae7bd7a79a&amp;imgtype=jpg&amp;src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F3812b31bb051f819bb89f293d0b44aed2f73e7bf.jpg" alt="1.4"><br>安装完成后，至此，所有的准备工作完成。</li>
+</ol>
+<h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p>建议在<a href="https://hexo.io/" target="_blank" rel="external">官网</a>中阅读中文文档进行安装。</p>
+<ol>
+<li>右击鼠标，点击 Git Bash Here.<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503305715537&amp;di=39d2f358f039b755a182c665eb689848&amp;imgtype=jpg&amp;src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F3bf33a87e950352a45cbc2d15943fbf2b3118b45.jpg" alt="1.5"></li>
+<li>键入 $ <code>npm install hexo-cli -g</code>即可进行安装。</li>
+<li>创建你的 Blog 文件并打开，右击鼠标打开Git，键入 $<code>npm init</code>即可进行初始化。接着输入 $<code>npm install</code>即可完成安装。</li>
+</ol>
+<h1 id="Hexo-目录"><a href="#Hexo-目录" class="headerlink" title="Hexo 目录"></a>Hexo 目录</h1><p>打开你的 Blog 文件，可看到一下目录：<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503306275840&amp;di=de5da74b5b424e5fc3f0134ec40c3f3c&amp;imgtype=jpg&amp;src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F10dfa9ec8a13632729e021ea9b8fa0ec09fac7de.jpg" alt="1.6"><br>Hexo部分已经完成，接下来是GitHub部分。</p>
+<h1 id="GitHub-部分"><a href="#GitHub-部分" class="headerlink" title="GitHub 部分"></a>GitHub 部分</h1><ol>
+<li>进入<a href="https://github.com/" target="_blank" rel="external">GitHub</a>官网，创建你的 GitHub 账号。</li>
+<li>新建一个respository.<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503306566046&amp;di=3f2f9a5a26e7ec4e4bfe71c1d08545b9&amp;imgtype=jpg&amp;src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F0b55b319ebc4b7455f4655cfc5fc1e178b82151c.jpg" alt="1.7"></li>
+<li>输入你的 respository name, <strong>注意</strong>！这里需输入 <code>name + github.io</code>, name与你的 Owner 名字相同。我参考了网络上的教程，有些说直接输入name就行，这样也可以创建博客，但是需要在 Settings 中手动开启 GitHub Pages 并且打开网页后是<strong>全文字网页</strong>。（没有图片）十分难看，明显是出错了。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503306750378&amp;di=eacb455e531091c0b2ffa08030045c19&amp;imgtype=jpg&amp;src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Faec379310a55b319f3f26eac49a98226cefc17db.jpg" alt="1.8"><br>（图中提示我已经注册。）</li>
+<li>复制你的 respository 地址，至此 GitHub 部分暂告一个段落。</li>
+</ol>
+<h1 id="回到-Hexo"><a href="#回到-Hexo" class="headerlink" title="回到 Hexo"></a>回到 Hexo</h1><ol>
+<li>打开你的 Blog 文件，点击<code>_config.yml</code>文件进行设定。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503306275840&amp;di=de5da74b5b424e5fc3f0134ec40c3f3c&amp;imgtype=jpg&amp;src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F10dfa9ec8a13632729e021ea9b8fa0ec09fac7de.jpg" alt="1.6"></li>
+<li>找到最后一行的<code>deploy</code>，并照图中的进行编辑。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503307577809&amp;di=187884dcb6f5fb4c915e1db3e552630c&amp;imgtype=jpg&amp;src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F77c6a7efce1b9d165b6071b8f9deb48f8d546440.jpg" alt="1.9"><br>其中，<code>repo</code>地址为你新创建的 respository 地址，粘贴就好。至此，基础设置完成。</li>
+</ol>
+<h1 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h1><p>在你的 Blog 文件中打开 Git, 输入 $ <code>hexo g</code>生成静态文件，接着，输入 $ <code>hexo s</code>即可生成本地预览。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503308047417&amp;di=1b2854a5a8a4b429bea3415084eff5c7&amp;imgtype=jpg&amp;src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fa8ec8a13632762d0b6bb7066aaec08fa503dc666.jpg" alt="2.0"><br>其中，<code>http://localhost:4000/</code>为你的本地博客地址，在浏览器中打开即可看到你的博客全貌。最后，输入 $ <code>hexo d</code>即可部署到你的 GitHub 上。打开 GitHub，进入<code>Settings</code>可查看你的域名。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80%20&amp;size=b10000_10000&amp;sec=1503308290766&amp;di=acee1938c43fef7a7e689cf6db826e61&amp;imgtype=jpg&amp;src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F3c6d55fbb2fb431627abaca32aa4462308f7d3b7.jpg" alt="2.1"><br>蓝色链接即为你的域名。本教程结束。</p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
